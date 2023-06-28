@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    background-color: black;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+  
+.logo img {
+    width: 70px; /* 根据需要调整logo的宽度 */
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li {
+    margin-left: 10px; /* 调整导航项之间的间距 */
+}
+  
+nav ul li a {
+    color: gray;
+    text-decoration: none;
+}
+
+.about-section {
+    text-align: center; /* 将"About Us"文字居中 */
+}
+  
+.about-content {
+    max-width: 600px; /* 可根据需要调整内容区域的最大宽度 */
+    margin: 0 auto; /* 将内容区域水平居中 */
+}
+
+.promotion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%; /* 添加容器的宽度设置 */
+}
+  
+.promotion img {
+    width: 300px; /* 根据需要调整图片的宽度 */
+    margin: 50px; /* 根据需要调整图片之间的间距 */
+    object-fit: cover; /* 添加图片的宽度适应样式 */
+}
+
+.promotion .layer {
+    position: absolute; /* 添加绝对定位 */
+    top: 90px; /* 调整遮罩层的垂直位置 */
+    left: 0;
+    width: 100%; /* 宽度与网页宽度一致 */
+    height: calc(34% + 20px); /* 高度稍微大于图片高度 */
+    background-color: rgba(106, 103, 103, 0.5); /* 灰色遮罩层颜色 */
+}
+
+.section-title {
+    position: relative;
+    font-size: 24px;
+    display: inline-block;
+}
+  
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* 调整下划线的位置 */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
