@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(5, 24, 39);
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: rgba(243, 212, 9, 0.979);
+  text-decoration: none;
+}
+
+#pics img {
+  width: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+.ex-section {
+  background-color: white;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+  height: 2px;
+  background-color: red;
+}
+
+.underline {
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  margin: 10px auto;
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.product-item {
+  width: 350px;
+  text-align: center;
+  margin: 0 100px;
+  flex-shrink: 0;
+}
+
+.product-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 18px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #888;
+}
+
+.serivesec-title {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  color:white
+}
+
+.service-section {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+.service-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('service1.png'); /* Replace 'path/to/your/image.jpg' with the actual image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 3; /* Adjust the opacity for the black overlay */
+  background-color: black; /* Set the background color of the overlay */
+  z-index: -1; /* Set a negative z-index to position the background below the content */
+}
+
+.service-section .serivesec-title {
+  font-size: 24px;
+  position: relative;
+}
+
+.service-section .serivesec-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust the position of the underline */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6%; /* Set the underline width to 100% */
+  height: 2px;
+  background-color: red;
+}
+
+/* Add styles for the "Contact Us" section */
+.contact-us {
+  background-color: red;
+  padding: 10px; /* Adjust the padding to control the size of the red rectangle */
+  color: white;
+  text-align: center;
+  max-width: 120px; /* Set a maximum width for the red rectangle */
+  margin: 0 auto; /* Center the red rectangle horizontally */
+}
+
+.contact-us h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Add the CSS rule for the "Contact Us" link text */
+.contact-us a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
