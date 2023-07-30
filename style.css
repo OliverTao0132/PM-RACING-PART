@@ -51,6 +51,9 @@ nav ul li a {
 .ex-section {
   background-color: white;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* 允许产品项在一行上排满后换行显示 */
+  justify-content: center; /* 居中显示图片和描述 */
 }
 
 .section-title {
@@ -85,16 +88,14 @@ nav ul li a {
 }
 
 .product-item {
-  width: 350px;
+  width: calc(33.33% - 20px); /* 让产品项在一行上平均分布，每行最多显示三个 */
   text-align: center;
-  margin: 0 100px;
-  flex-shrink: 0;
+  margin: 10px; /* 调整产品项的外边距，使它们之间的间距更合适 */
 }
 
 .product-item img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+  max-width: 100%; /* 使图片宽度最大不超过父元素的宽度 */
+  height: auto; /* 保持图片的宽高比 */
   margin-bottom: 10px;
 }
 
