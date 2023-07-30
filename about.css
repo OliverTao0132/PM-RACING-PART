@@ -53,14 +53,7 @@ nav ul li a {
     object-fit: cover; /* 添加图片的宽度适应样式 */
 }
 
-.promotion .layer {
-    position: absolute; /* 添加绝对定位 */
-    top: 90px; /* 调整遮罩层的垂直位置 */
-    left: 0;
-    width: 100%; /* 宽度与网页宽度一致 */
-    height: calc(34% + 20px); /* 高度稍微大于图片高度 */
-    background-color: rgba(106, 103, 103, 0.5); /* 灰色遮罩层颜色 */
-}
+
 
 .section-title {
     position: relative;
