@@ -51,9 +51,7 @@ nav ul li a {
 .ex-section {
   background-color: white;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap; /* 允许产品项在一行上排满后换行显示 */
-  justify-content: center; /* 居中显示图片和描述 */
+  text-align: center; /* 居中文字内容 */
 }
 
 .section-title {
@@ -69,13 +67,13 @@ nav ul li a {
   left: 50%;
   transform: translateX(-50%);
   width: 15%;
-  height: 2px;
+  height: 3px;
   background-color: red;
 }
 
 .underline {
-  width: 100%;
-  height: 2px;
+  width: 50%;
+  height: 20px;
   background-color: red;
   margin: 10px auto;
 }
@@ -94,8 +92,10 @@ nav ul li a {
 }
 
 .product-item img {
-  max-width: 100%; /* 使图片宽度最大不超过父元素的宽度 */
-  height: auto; /* 保持图片的宽高比 */
+  width: 60%;
+  aspect-ratio: 10/6;
+  object-fit: cover;
+  background-position: center;
   margin-bottom: 10px;
 }
 
@@ -106,6 +106,33 @@ nav ul li a {
 .product-price {
   font-size: 16px;
   color: #888;
+}
+
+.products-button {
+  background-color: red;
+  padding: 10px; /* Adjust the padding to control the size of the red rectangle */
+  color: white;
+  text-align: center;
+  max-width: 120px; /* Set a maximum width for the red rectangle */
+  margin: 0 auto; /* Center the red rectangle horizontally */
+}
+
+.products-button h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.products-button p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Add the CSS rule for the "Contact Us" link text */
+.products-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .serivesec-title {
@@ -180,4 +207,8 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+a{
+  text-decoration: none;
 }

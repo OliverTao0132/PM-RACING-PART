@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    background-color: rgb(5, 24, 39);
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+.logo img {
+    width: 70px; /* 根据需要调整logo的宽度 */
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li {
+    margin-left: 10px; /* 调整导航项之间的间距 */
+}
+  
+nav ul li a {
+    color: rgba(249, 212,9, 0.979);
+    text-decoration: none;
+}
+
+.ex-section {
+    background-color: white;
+    padding: 20px;
+    text-align: center; /* 居中文字内容 */
+}
+  
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+  
+.section-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 3px;
+    background-color: red;
+}
+  
+.underline {
+    width: 50%;
+    height: 20px;
+    background-color: red;
+    margin: 10px auto;
+}
+  
+.product-box {
+    display: flex;
+    flex-wrap: wrap; /* 添加弹性盒子换行 */
+    justify-content: space-between; /* 让产品项在一行上平均分布 */
+    align-items: flex-start;
+    margin-top: 60px;
+}
+  
+.product-item {
+    width: calc(33.33% - 20px); /* 让产品项在一行上平均分布，每行最多显示三个 */
+    text-align: center;
+    margin: 10px; /* 调整产品项的外边距，使它们之间的间距更合适 */
+}
+  
+.product-item img {
+    width: 60%;
+    aspect-ratio: 10/6;
+    object-fit: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+  
+.product-description {
+    font-size: 18px;
+}
+  
+.product-price {
+    font-size: 16px;
+    color: #888;
+}
+
+a{
+    text-decoration: none;
+  }
